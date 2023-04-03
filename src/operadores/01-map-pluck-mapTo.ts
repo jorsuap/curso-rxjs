@@ -25,4 +25,4 @@ const keyPluck$ = keyup$.pipe(
 keyup$.subscribe(console.log)
 keyupCode$.subscribe(code => console.log('map', code));
 keyPluck$.subscribe(code => console.log('pluck', code));
-keyMapTo$.subscribe(code => console.log('mapTo', code));//
+keyMapTo$.subscribe(code => console.log('mapTo', code));//dfd
