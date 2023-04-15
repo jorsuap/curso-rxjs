@@ -1,6 +1,8 @@
-import { fromEvent, range } from 'rxjs'; // algo para crear observables
-import { map, pluck, mapTo } from 'rxjs/operators'; 
+import { fromEvent, range, of, from } from 'rxjs'; // algo para crear observables
+import { filter,map } from 'rxjs/operators'; 
 
-//map
+//tap puede disparar efectos secundarios ejemplo disparar acciones
 
+const number$ = range(1,5)
 
+number$.subscribe(val => console.log('subsw', val))
